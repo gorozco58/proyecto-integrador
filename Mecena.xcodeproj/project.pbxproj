@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7138D2B241A9BF40005417D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7138D2A241A9BF40005417D /* AppDelegate.swift */; };
+		A7138D2D241A9BF40005417D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7138D2C241A9BF40005417D /* SceneDelegate.swift */; };
+		A7138D34241A9BF50005417D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7138D33241A9BF50005417D /* Assets.xcassets */; };
+		A7138D37241A9BF50005417D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7138D35241A9BF50005417D /* LaunchScreen.storyboard */; };
+		A7138D42241A9BF50005417D /* MecenaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7138D41241A9BF50005417D /* MecenaTests.swift */; };
+		A7138D4D241A9BF50005417D /* MecenaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7138D4C241A9BF50005417D /* MecenaUITests.swift */; };
+		A7138D60241A9E980005417D /* ProjectsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7138D5E241A9E980005417D /* ProjectsListViewController.swift */; };
+		A7138D61241A9E980005417D /* ProjectsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7138D5F241A9E980005417D /* ProjectsListViewController.xib */; };
+		A7138D64241AA8F20005417D /* App+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7138D63241AA8F20005417D /* App+UIColor.swift */; };
+		A7138D67241AAF000005417D /* InvestmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7138D65241AAF000005417D /* InvestmentsViewController.swift */; };
+		A7138D68241AAF000005417D /* InvestmentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7138D66241AAF000005417D /* InvestmentsViewController.xib */; };
+		A7138D6B241AB0F60005417D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7138D69241AB0F60005417D /* ProfileViewController.swift */; };
+		A7138D6C241AB0F60005417D /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7138D6A241AB0F60005417D /* ProfileViewController.xib */; };
+		A7B8BF56243256F900384A20 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF55243256F900384A20 /* Project.swift */; };
+		A7B8BF5824325A3300384A20 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF5724325A3300384A20 /* UITableView+Extension.swift */; };
+		A7B8BF5D24325ADE00384A20 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF5B24325ADE00384A20 /* ProjectCell.swift */; };
+		A7B8BF5E24325ADE00384A20 /* ProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B8BF5C24325ADE00384A20 /* ProjectCell.xib */; };
+		A7B8BF622432A47300384A20 /* ProjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF602432A47300384A20 /* ProjectDetailsViewController.swift */; };
+		A7B8BF632432A47300384A20 /* ProjectDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B8BF612432A47300384A20 /* ProjectDetailsViewController.xib */; };
+		A7B8BF672432A69E00384A20 /* ProjectDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF652432A69E00384A20 /* ProjectDescriptionCell.swift */; };
+		A7B8BF682432A69E00384A20 /* ProjectDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B8BF662432A69E00384A20 /* ProjectDescriptionCell.xib */; };
+		D1D51D3A75FC5231091305A7 /* Pods_Mecena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C672AE1C6C65C8E433E6AA8 /* Pods_Mecena.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7138D3E241A9BF50005417D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7138D1F241A9BF40005417D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7138D26241A9BF40005417D;
+			remoteInfo = Mecena;
+		};
+		A7138D49241A9BF50005417D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7138D1F241A9BF40005417D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7138D26241A9BF40005417D;
+			remoteInfo = Mecena;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C672AE1C6C65C8E433E6AA8 /* Pods_Mecena.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mecena.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7138D27241A9BF40005417D /* Mecena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mecena.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7138D2A241A9BF40005417D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7138D2C241A9BF40005417D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A7138D33241A9BF50005417D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7138D36241A9BF50005417D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7138D38241A9BF50005417D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7138D3D241A9BF50005417D /* MecenaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MecenaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7138D41241A9BF50005417D /* MecenaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MecenaTests.swift; sourceTree = "<group>"; };
+		A7138D43241A9BF50005417D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7138D48241A9BF50005417D /* MecenaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MecenaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7138D4C241A9BF50005417D /* MecenaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MecenaUITests.swift; sourceTree = "<group>"; };
+		A7138D4E241A9BF50005417D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7138D5E241A9E980005417D /* ProjectsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListViewController.swift; sourceTree = "<group>"; };
+		A7138D5F241A9E980005417D /* ProjectsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectsListViewController.xib; sourceTree = "<group>"; };
+		A7138D63241AA8F20005417D /* App+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+UIColor.swift"; sourceTree = "<group>"; };
+		A7138D65241AAF000005417D /* InvestmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentsViewController.swift; sourceTree = "<group>"; };
+		A7138D66241AAF000005417D /* InvestmentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvestmentsViewController.xib; sourceTree = "<group>"; };
+		A7138D69241AB0F60005417D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A7138D6A241AB0F60005417D /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		A7B8BF55243256F900384A20 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		A7B8BF5724325A3300384A20 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		A7B8BF5B24325ADE00384A20 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		A7B8BF5C24325ADE00384A20 /* ProjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCell.xib; sourceTree = "<group>"; };
+		A7B8BF602432A47300384A20 /* ProjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsViewController.swift; sourceTree = "<group>"; };
+		A7B8BF612432A47300384A20 /* ProjectDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectDetailsViewController.xib; sourceTree = "<group>"; };
+		A7B8BF652432A69E00384A20 /* ProjectDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDescriptionCell.swift; sourceTree = "<group>"; };
+		A7B8BF662432A69E00384A20 /* ProjectDescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectDescriptionCell.xib; sourceTree = "<group>"; };
+		F874E788E14B72458FAF458F /* Pods-Mecena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mecena.debug.xcconfig"; path = "Target Support Files/Pods-Mecena/Pods-Mecena.debug.xcconfig"; sourceTree = "<group>"; };
+		FE47613F0137A4413ED3D1DB /* Pods-Mecena.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mecena.release.xcconfig"; path = "Target Support Files/Pods-Mecena/Pods-Mecena.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7138D24241A9BF40005417D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1D51D3A75FC5231091305A7 /* Pods_Mecena.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7138D3A241A9BF50005417D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7138D45241A9BF50005417D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22B393BD033DCE53DE188752 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C672AE1C6C65C8E433E6AA8 /* Pods_Mecena.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7138D1E241A9BF40005417D = {
+			isa = PBXGroup;
+			children = (
+				A7138D29241A9BF40005417D /* Mecena */,
+				A7138D40241A9BF50005417D /* MecenaTests */,
+				A7138D4B241A9BF50005417D /* MecenaUITests */,
+				A7138D28241A9BF40005417D /* Products */,
+				FDF7C7B84F8033DFDBE3C24C /* Pods */,
+				22B393BD033DCE53DE188752 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7138D28241A9BF40005417D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7138D27241A9BF40005417D /* Mecena.app */,
+				A7138D3D241A9BF50005417D /* MecenaTests.xctest */,
+				A7138D48241A9BF50005417D /* MecenaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7138D29241A9BF40005417D /* Mecena */ = {
+			isa = PBXGroup;
+			children = (
+				A7138D62241AA8DD0005417D /* Utils */,
+				A7138D5B241A9C2B0005417D /* Login */,
+				A7138D5A241A9C190005417D /* Projects */,
+				A7138D5C241A9C320005417D /* Inverstments */,
+				A7138D5D241A9C620005417D /* Profile */,
+				A7138D2A241A9BF40005417D /* AppDelegate.swift */,
+				A7138D2C241A9BF40005417D /* SceneDelegate.swift */,
+				A7138D33241A9BF50005417D /* Assets.xcassets */,
+				A7138D35241A9BF50005417D /* LaunchScreen.storyboard */,
+				A7138D38241A9BF50005417D /* Info.plist */,
+			);
+			path = Mecena;
+			sourceTree = "<group>";
+		};
+		A7138D40241A9BF50005417D /* MecenaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7138D41241A9BF50005417D /* MecenaTests.swift */,
+				A7138D43241A9BF50005417D /* Info.plist */,
+			);
+			path = MecenaTests;
+			sourceTree = "<group>";
+		};
+		A7138D4B241A9BF50005417D /* MecenaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7138D4C241A9BF50005417D /* MecenaUITests.swift */,
+				A7138D4E241A9BF50005417D /* Info.plist */,
+			);
+			path = MecenaUITests;
+			sourceTree = "<group>";
+		};
+		A7138D5A241A9C190005417D /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				A7391AB6243253C900DA7F9B /* List */,
+				A7B8BF5F24328FDB00384A20 /* Detail */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		A7138D5B241A9C2B0005417D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A7138D5C241A9C320005417D /* Inverstments */ = {
+			isa = PBXGroup;
+			children = (
+				A7391AB7243253DF00DA7F9B /* List */,
+			);
+			path = Inverstments;
+			sourceTree = "<group>";
+		};
+		A7138D5D241A9C620005417D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A7138D69241AB0F60005417D /* ProfileViewController.swift */,
+				A7138D6A241AB0F60005417D /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A7138D62241AA8DD0005417D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A7B8BF5724325A3300384A20 /* UITableView+Extension.swift */,
+				A7138D63241AA8F20005417D /* App+UIColor.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A7391AB6243253C900DA7F9B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A7B8BF5A24325AB700384A20 /* Model */,
+				A7B8BF5924325AB100384A20 /* Cells */,
+				A7138D5E241A9E980005417D /* ProjectsListViewController.swift */,
+				A7138D5F241A9E980005417D /* ProjectsListViewController.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		A7391AB7243253DF00DA7F9B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A7138D65241AAF000005417D /* InvestmentsViewController.swift */,
+				A7138D66241AAF000005417D /* InvestmentsViewController.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		A7B8BF5924325AB100384A20 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A7B8BF5B24325ADE00384A20 /* ProjectCell.swift */,
+				A7B8BF5C24325ADE00384A20 /* ProjectCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A7B8BF5A24325AB700384A20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7B8BF55243256F900384A20 /* Project.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7B8BF5F24328FDB00384A20 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A7B8BF642432A61A00384A20 /* Cells */,
+				A7B8BF602432A47300384A20 /* ProjectDetailsViewController.swift */,
+				A7B8BF612432A47300384A20 /* ProjectDetailsViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		A7B8BF642432A61A00384A20 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A7B8BF652432A69E00384A20 /* ProjectDescriptionCell.swift */,
+				A7B8BF662432A69E00384A20 /* ProjectDescriptionCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FDF7C7B84F8033DFDBE3C24C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F874E788E14B72458FAF458F /* Pods-Mecena.debug.xcconfig */,
+				FE47613F0137A4413ED3D1DB /* Pods-Mecena.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7138D26241A9BF40005417D /* Mecena */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7138D51241A9BF50005417D /* Build configuration list for PBXNativeTarget "Mecena" */;
+			buildPhases = (
+				6655B45BBB3DE5CA4C5BD3FE /* [CP] Check Pods Manifest.lock */,
+				A7138D23241A9BF40005417D /* Sources */,
+				A7138D24241A9BF40005417D /* Frameworks */,
+				A7138D25241A9BF40005417D /* Resources */,
+				A5232DE9C121DE868DB297E3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mecena;
+			productName = Mecena;
+			productReference = A7138D27241A9BF40005417D /* Mecena.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7138D3C241A9BF50005417D /* MecenaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7138D54241A9BF50005417D /* Build configuration list for PBXNativeTarget "MecenaTests" */;
+			buildPhases = (
+				A7138D39241A9BF50005417D /* Sources */,
+				A7138D3A241A9BF50005417D /* Frameworks */,
+				A7138D3B241A9BF50005417D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7138D3F241A9BF50005417D /* PBXTargetDependency */,
+			);
+			name = MecenaTests;
+			productName = MecenaTests;
+			productReference = A7138D3D241A9BF50005417D /* MecenaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7138D47241A9BF50005417D /* MecenaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7138D57241A9BF50005417D /* Build configuration list for PBXNativeTarget "MecenaUITests" */;
+			buildPhases = (
+				A7138D44241A9BF50005417D /* Sources */,
+				A7138D45241A9BF50005417D /* Frameworks */,
+				A7138D46241A9BF50005417D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7138D4A241A9BF50005417D /* PBXTargetDependency */,
+			);
+			name = MecenaUITests;
+			productName = MecenaUITests;
+			productReference = A7138D48241A9BF50005417D /* MecenaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7138D1F241A9BF40005417D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = pjic;
+				TargetAttributes = {
+					A7138D26241A9BF40005417D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					A7138D3C241A9BF50005417D = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A7138D26241A9BF40005417D;
+					};
+					A7138D47241A9BF50005417D = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A7138D26241A9BF40005417D;
+					};
+				};
+			};
+			buildConfigurationList = A7138D22241A9BF40005417D /* Build configuration list for PBXProject "Mecena" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7138D1E241A9BF40005417D;
+			productRefGroup = A7138D28241A9BF40005417D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7138D26241A9BF40005417D /* Mecena */,
+				A7138D3C241A9BF50005417D /* MecenaTests */,
+				A7138D47241A9BF50005417D /* MecenaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7138D25241A9BF40005417D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B8BF632432A47300384A20 /* ProjectDetailsViewController.xib in Resources */,
+				A7138D61241A9E980005417D /* ProjectsListViewController.xib in Resources */,
+				A7138D68241AAF000005417D /* InvestmentsViewController.xib in Resources */,
+				A7138D37241A9BF50005417D /* LaunchScreen.storyboard in Resources */,
+				A7138D6C241AB0F60005417D /* ProfileViewController.xib in Resources */,
+				A7138D34241A9BF50005417D /* Assets.xcassets in Resources */,
+				A7B8BF682432A69E00384A20 /* ProjectDescriptionCell.xib in Resources */,
+				A7B8BF5E24325ADE00384A20 /* ProjectCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7138D3B241A9BF50005417D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7138D46241A9BF50005417D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6655B45BBB3DE5CA4C5BD3FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mecena-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5232DE9C121DE868DB297E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mecena/Pods-Mecena-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mecena/Pods-Mecena-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mecena/Pods-Mecena-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7138D23241A9BF40005417D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7138D6B241AB0F60005417D /* ProfileViewController.swift in Sources */,
+				A7B8BF672432A69E00384A20 /* ProjectDescriptionCell.swift in Sources */,
+				A7138D60241A9E980005417D /* ProjectsListViewController.swift in Sources */,
+				A7138D64241AA8F20005417D /* App+UIColor.swift in Sources */,
+				A7138D67241AAF000005417D /* InvestmentsViewController.swift in Sources */,
+				A7B8BF5D24325ADE00384A20 /* ProjectCell.swift in Sources */,
+				A7138D2B241A9BF40005417D /* AppDelegate.swift in Sources */,
+				A7B8BF56243256F900384A20 /* Project.swift in Sources */,
+				A7138D2D241A9BF40005417D /* SceneDelegate.swift in Sources */,
+				A7B8BF5824325A3300384A20 /* UITableView+Extension.swift in Sources */,
+				A7B8BF622432A47300384A20 /* ProjectDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7138D39241A9BF50005417D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7138D42241A9BF50005417D /* MecenaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7138D44241A9BF50005417D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7138D4D241A9BF50005417D /* MecenaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7138D3F241A9BF50005417D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7138D26241A9BF40005417D /* Mecena */;
+			targetProxy = A7138D3E241A9BF50005417D /* PBXContainerItemProxy */;
+		};
+		A7138D4A241A9BF50005417D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7138D26241A9BF40005417D /* Mecena */;
+			targetProxy = A7138D49241A9BF50005417D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7138D35241A9BF50005417D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7138D36241A9BF50005417D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7138D4F241A9BF50005417D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7138D50241A9BF50005417D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7138D52241A9BF50005417D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F874E788E14B72458FAF458F /* Pods-Mecena.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MB7E65S72;
+				INFOPLIST_FILE = Mecena/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pjic.Mecena;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7138D53241A9BF50005417D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE47613F0137A4413ED3D1DB /* Pods-Mecena.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MB7E65S72;
+				INFOPLIST_FILE = Mecena/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pjic.Mecena;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7138D55241A9BF50005417D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MB7E65S72;
+				INFOPLIST_FILE = MecenaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pjic.MecenaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mecena.app/Mecena";
+			};
+			name = Debug;
+		};
+		A7138D56241A9BF50005417D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MB7E65S72;
+				INFOPLIST_FILE = MecenaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pjic.MecenaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mecena.app/Mecena";
+			};
+			name = Release;
+		};
+		A7138D58241A9BF50005417D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MB7E65S72;
+				INFOPLIST_FILE = MecenaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pjic.MecenaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mecena;
+			};
+			name = Debug;
+		};
+		A7138D59241A9BF50005417D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MB7E65S72;
+				INFOPLIST_FILE = MecenaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pjic.MecenaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mecena;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7138D22241A9BF40005417D /* Build configuration list for PBXProject "Mecena" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7138D4F241A9BF50005417D /* Debug */,
+				A7138D50241A9BF50005417D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7138D51241A9BF50005417D /* Build configuration list for PBXNativeTarget "Mecena" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7138D52241A9BF50005417D /* Debug */,
+				A7138D53241A9BF50005417D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7138D54241A9BF50005417D /* Build configuration list for PBXNativeTarget "MecenaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7138D55241A9BF50005417D /* Debug */,
+				A7138D56241A9BF50005417D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7138D57241A9BF50005417D /* Build configuration list for PBXNativeTarget "MecenaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7138D58241A9BF50005417D /* Debug */,
+				A7138D59241A9BF50005417D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7138D1F241A9BF40005417D /* Project object */;
+}
