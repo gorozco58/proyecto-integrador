@@ -1,5 +1,5 @@
 //
-//  ProjectDescriptionCell.swift
+//  HeaderInformationCell.swift
 //  Mecena
 //
 //  Created by Giovanny Orozco Loaiza on 30/03/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProjectDescriptionCell: UITableViewCell {
+class HeaderInformationCell: UITableViewCell {
 
     @IBOutlet private weak var projectImageView: UIImageView!
     @IBOutlet private weak var ownerImageView: UIImageView!
@@ -34,12 +34,6 @@ class ProjectDescriptionCell: UITableViewCell {
         descriptionLabel.text = project.description
         progressView.setProgress(Float(project.progress), animated: false)
         totalNeededLabel.text = project.totalNeededFormatted
-        totalFoundedLabel.text = project.totalFoundedFormatted
-        daysRemainingLabel.text = String(project.daysRemaining)
-        
-        defaultDonationButtons.enumerated().forEach { (index, button) in
-            button.setTitle(project.defaultDonationsFormatted[index], for: .normal)
-        }
+        daysRemainingLabel.text = "\(project.daysRemaining) para apoyar este proyecto"
     }
-    
 }

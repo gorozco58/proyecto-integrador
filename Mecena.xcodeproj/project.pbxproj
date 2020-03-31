@@ -26,8 +26,13 @@
 		A7B8BF5E24325ADE00384A20 /* ProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B8BF5C24325ADE00384A20 /* ProjectCell.xib */; };
 		A7B8BF622432A47300384A20 /* ProjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF602432A47300384A20 /* ProjectDetailsViewController.swift */; };
 		A7B8BF632432A47300384A20 /* ProjectDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B8BF612432A47300384A20 /* ProjectDetailsViewController.xib */; };
-		A7B8BF672432A69E00384A20 /* ProjectDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF652432A69E00384A20 /* ProjectDescriptionCell.swift */; };
-		A7B8BF682432A69E00384A20 /* ProjectDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B8BF662432A69E00384A20 /* ProjectDescriptionCell.xib */; };
+		A7B8BF672432A69E00384A20 /* HeaderInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF652432A69E00384A20 /* HeaderInformationCell.swift */; };
+		A7B8BF682432A69E00384A20 /* HeaderInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B8BF662432A69E00384A20 /* HeaderInformationCell.xib */; };
+		A7B8BF6A2432AF4E00384A20 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF692432AF4E00384A20 /* Donation.swift */; };
+		A7EA8F6D2433847500260B77 /* DetailInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EA8F6B2433847500260B77 /* DetailInformationCell.swift */; };
+		A7EA8F6E2433847500260B77 /* DetailInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7EA8F6C2433847500260B77 /* DetailInformationCell.xib */; };
+		A7EA8F712433902800260B77 /* DonationOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EA8F6F2433902800260B77 /* DonationOptionCell.swift */; };
+		A7EA8F722433902800260B77 /* DonationOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7EA8F702433902800260B77 /* DonationOptionCell.xib */; };
 		D1D51D3A75FC5231091305A7 /* Pods_Mecena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C672AE1C6C65C8E433E6AA8 /* Pods_Mecena.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,8 +80,13 @@
 		A7B8BF5C24325ADE00384A20 /* ProjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCell.xib; sourceTree = "<group>"; };
 		A7B8BF602432A47300384A20 /* ProjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsViewController.swift; sourceTree = "<group>"; };
 		A7B8BF612432A47300384A20 /* ProjectDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectDetailsViewController.xib; sourceTree = "<group>"; };
-		A7B8BF652432A69E00384A20 /* ProjectDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDescriptionCell.swift; sourceTree = "<group>"; };
-		A7B8BF662432A69E00384A20 /* ProjectDescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectDescriptionCell.xib; sourceTree = "<group>"; };
+		A7B8BF652432A69E00384A20 /* HeaderInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderInformationCell.swift; sourceTree = "<group>"; };
+		A7B8BF662432A69E00384A20 /* HeaderInformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderInformationCell.xib; sourceTree = "<group>"; };
+		A7B8BF692432AF4E00384A20 /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		A7EA8F6B2433847500260B77 /* DetailInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationCell.swift; sourceTree = "<group>"; };
+		A7EA8F6C2433847500260B77 /* DetailInformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailInformationCell.xib; sourceTree = "<group>"; };
+		A7EA8F6F2433902800260B77 /* DonationOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationOptionCell.swift; sourceTree = "<group>"; };
+		A7EA8F702433902800260B77 /* DonationOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonationOptionCell.xib; sourceTree = "<group>"; };
 		F874E788E14B72458FAF458F /* Pods-Mecena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mecena.debug.xcconfig"; path = "Target Support Files/Pods-Mecena/Pods-Mecena.debug.xcconfig"; sourceTree = "<group>"; };
 		FE47613F0137A4413ED3D1DB /* Pods-Mecena.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mecena.release.xcconfig"; path = "Target Support Files/Pods-Mecena/Pods-Mecena.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -247,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				A7B8BF55243256F900384A20 /* Project.swift */,
+				A7B8BF692432AF4E00384A20 /* Donation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,8 +275,12 @@
 		A7B8BF642432A61A00384A20 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				A7B8BF652432A69E00384A20 /* ProjectDescriptionCell.swift */,
-				A7B8BF662432A69E00384A20 /* ProjectDescriptionCell.xib */,
+				A7B8BF652432A69E00384A20 /* HeaderInformationCell.swift */,
+				A7B8BF662432A69E00384A20 /* HeaderInformationCell.xib */,
+				A7EA8F6B2433847500260B77 /* DetailInformationCell.swift */,
+				A7EA8F6C2433847500260B77 /* DetailInformationCell.xib */,
+				A7EA8F6F2433902800260B77 /* DonationOptionCell.swift */,
+				A7EA8F702433902800260B77 /* DonationOptionCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -385,13 +400,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7EA8F722433902800260B77 /* DonationOptionCell.xib in Resources */,
+				A7EA8F6E2433847500260B77 /* DetailInformationCell.xib in Resources */,
 				A7B8BF632432A47300384A20 /* ProjectDetailsViewController.xib in Resources */,
 				A7138D61241A9E980005417D /* ProjectsListViewController.xib in Resources */,
 				A7138D68241AAF000005417D /* InvestmentsViewController.xib in Resources */,
 				A7138D37241A9BF50005417D /* LaunchScreen.storyboard in Resources */,
 				A7138D6C241AB0F60005417D /* ProfileViewController.xib in Resources */,
 				A7138D34241A9BF50005417D /* Assets.xcassets in Resources */,
-				A7B8BF682432A69E00384A20 /* ProjectDescriptionCell.xib in Resources */,
+				A7B8BF682432A69E00384A20 /* HeaderInformationCell.xib in Resources */,
 				A7B8BF5E24325ADE00384A20 /* ProjectCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,14 +477,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7138D6B241AB0F60005417D /* ProfileViewController.swift in Sources */,
-				A7B8BF672432A69E00384A20 /* ProjectDescriptionCell.swift in Sources */,
+				A7B8BF672432A69E00384A20 /* HeaderInformationCell.swift in Sources */,
 				A7138D60241A9E980005417D /* ProjectsListViewController.swift in Sources */,
 				A7138D64241AA8F20005417D /* App+UIColor.swift in Sources */,
+				A7EA8F6D2433847500260B77 /* DetailInformationCell.swift in Sources */,
 				A7138D67241AAF000005417D /* InvestmentsViewController.swift in Sources */,
 				A7B8BF5D24325ADE00384A20 /* ProjectCell.swift in Sources */,
 				A7138D2B241A9BF40005417D /* AppDelegate.swift in Sources */,
 				A7B8BF56243256F900384A20 /* Project.swift in Sources */,
 				A7138D2D241A9BF40005417D /* SceneDelegate.swift in Sources */,
+				A7EA8F712433902800260B77 /* DonationOptionCell.swift in Sources */,
+				A7B8BF6A2432AF4E00384A20 /* Donation.swift in Sources */,
 				A7B8BF5824325A3300384A20 /* UITableView+Extension.swift in Sources */,
 				A7B8BF622432A47300384A20 /* ProjectDetailsViewController.swift in Sources */,
 			);
@@ -645,7 +665,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pjic.Mecena;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -664,7 +684,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pjic.Mecena;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

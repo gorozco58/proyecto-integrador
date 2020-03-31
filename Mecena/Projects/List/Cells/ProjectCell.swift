@@ -33,9 +33,15 @@ class ProjectCell: UITableViewCell {
         progressView.layer.cornerRadius = 4
         progressView.layer.masksToBounds = true
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        projectImageView.image = nil
+        ownerImageView.image = nil
+    }
 
     func setupView(with project: Project) {
-        projectImageView.af.setImage(withURL: project.projectImageUrl, placeholderImage: nil)
+        projectImageView.af.setImage(withURL: project.projectImageUrl, placeholderImage: UIImage())
         ownerImageView.af.setImage(withURL: project.ownerImageUrl)
         titleLabel.text = project.title
         descriptionLabel.text = project.description

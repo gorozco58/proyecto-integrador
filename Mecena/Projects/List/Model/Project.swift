@@ -13,6 +13,7 @@ class Project: Hashable {
     var projectImageUrl: URL
     var ownerImageUrl: URL
     var title: String
+    var productName: String
     var description: String
     var totalNeeded: Double
     var totalFounded: Double
@@ -28,11 +29,21 @@ class Project: Hashable {
         return formatter
     }()
     
+    var donationOptions: [Donation] {
+        return [
+            Donation(value: 5000, title: "Donar sin recompensa", description: "Apoyar por que crees en este proyecto"),
+            Donation(value: totalNeeded / 200, title: "Recompensa 1", description: "Apoyar el proyecto para recibir los benefiocios basicos"),
+            Donation(value: totalNeeded / 100, title: "Recompensa 2", description: "Apoyar el proyecto para recibir los benefiocios intermedios"),
+            Donation(value: totalNeeded / 80, title: "Recompensa 3", description: "Apoyar el proyecto para recibir los benefiocios exclusivos"),
+            Donation(value: totalNeeded / 60, title: "Recompensa 4", description: "Apoyar el proyecto para recibir todos los beneficios ofrecidos por el emprendedor")
+        ]
+    }
+    
     var defaultDonations: [Double] {
         return [
-            totalNeeded / 40,
-            totalNeeded / 20,
-            totalNeeded / 10,
+            donationOptions[1].value,
+            donationOptions[2].value,
+            donationOptions[3].value
         ]
     }
     
@@ -62,6 +73,7 @@ class Project: Hashable {
          projectImageUrl: URL,
          ownerImageUrl: URL,
          title: String,
+         productName: String,
          description: String,
          totalNeeded: Double,
          totalFounded: Double,
@@ -72,6 +84,7 @@ class Project: Hashable {
         self.projectImageUrl = projectImageUrl
         self.ownerImageUrl = ownerImageUrl
         self.title = title
+        self.productName = productName
         self.description = description
         self.totalNeeded = totalNeeded
         self.totalFounded = totalFounded
