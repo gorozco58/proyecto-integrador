@@ -82,7 +82,32 @@ extension ProjectDetailsViewController: UITableViewDataSource, UITableViewDelega
             let option = project.donationOptions[indexPath.row]
             let cell: DonationOptionCell = tableView.dequeueCell(at: indexPath)
             cell.setupView(with: option)
+            cell.delegate = self
             return cell
+        }
+    }
+}
+
+//MARK: - DonationOptionCellDelegate
+extension ProjectDetailsViewController: DonationOptionCellDelegate {
+    
+    func donationOptionCellDidSelectDonation(_ cell: DonationOptionCell, donation: Donation) {
+        project.ownDonation = donation
+        let message = "Gracias por creer en este proyecto ahora te haz convertido en Mecena de este proyecto con una donación de \(donation.valueFormatted)"
+        let confirmation = ConfirmationViewController(message: message)
+        confirmation.delegate = self
+        confirmation.modalPresentationStyle = .overCurrentContext
+        tabBarController?.present(confirmation, animated: true, completion: nil)
+    }
+}
+
+//MARK: - ConfirmationViewControllerDelegate
+extension ProjectDetailsViewController: ConfirmationViewControllerDelegate {
+    
+    func dismissViewController(_ viewController: ConfirmationViewController) {
+        viewController.dismiss(animated: true) {
+            self.tabBarController?.selectedIndex = 1
+            self.navigationController?.popViewController(animated: false)
         }
     }
 }

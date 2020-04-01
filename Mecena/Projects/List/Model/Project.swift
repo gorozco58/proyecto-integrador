@@ -19,6 +19,7 @@ class Project: Hashable {
     var totalFounded: Double
     var totalDonators: Int
     var creationDate: Date
+    var ownDonation: Donation?
     
     var formatter: NumberFormatter = {
         var formatter = NumberFormatter()

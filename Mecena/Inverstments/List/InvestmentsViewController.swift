@@ -22,6 +22,5 @@ class InvestmentsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
