@@ -19,6 +19,7 @@ class Project: Hashable {
     var totalFounded: Double
     var totalDonators: Int
     var creationDate: Date
+    var donationOptions: [Donation]
     var ownDonation: Donation?
     
     var formatter: NumberFormatter = {
@@ -29,16 +30,6 @@ class Project: Hashable {
         formatter.currencyGroupingSeparator = "."
         return formatter
     }()
-    
-    var donationOptions: [Donation] {
-        return [
-            Donation(value: 5000, title: "Donar sin recompensa", description: "Apoyar por que crees en este proyecto"),
-            Donation(value: totalNeeded / 200, title: "Recompensa 1", description: "Apoyar el proyecto para recibir los benefiocios basicos"),
-            Donation(value: totalNeeded / 100, title: "Recompensa 2", description: "Apoyar el proyecto para recibir los benefiocios intermedios"),
-            Donation(value: totalNeeded / 80, title: "Recompensa 3", description: "Apoyar el proyecto para recibir los benefiocios exclusivos"),
-            Donation(value: totalNeeded / 60, title: "Recompensa 4", description: "Apoyar el proyecto para recibir todos los beneficios ofrecidos por el emprendedor")
-        ]
-    }
     
     var defaultDonations: [Double] {
         return [
@@ -79,7 +70,8 @@ class Project: Hashable {
          totalNeeded: Double,
          totalFounded: Double,
          totalDonators: Int,
-         creationDate: Date) {
+         creationDate: Date,
+         donationOptions: [Donation]) {
         
         self.identifier = identifier
         self.projectImageUrl = projectImageUrl
@@ -91,6 +83,7 @@ class Project: Hashable {
         self.totalFounded = totalFounded
         self.totalDonators = totalDonators
         self.creationDate = creationDate
+        self.donationOptions = donationOptions
     }
     
     static func == (lhs: Project, rhs: Project) -> Bool {
@@ -99,5 +92,11 @@ class Project: Hashable {
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(identifier)
+    }
+    
+    func performDonation(_ donation: Donation) {
+        ownDonation = donation
+        totalFounded += donation.value
+        totalDonators += 1
     }
 }

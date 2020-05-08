@@ -8,15 +8,10 @@
 
 import UIKit
 
-enum ProjectsSection {
-    case main
-}
-
 class ProjectsListViewController: UIViewController {
     
     @IBOutlet private weak var projectsTableView: UITableView!
-    
-    private var dataSource: UITableViewDiffableDataSource<ProjectsSection, Project>!
+    private var projects = ProjectsManager.shared.explorableProjects
     
     init() {
         super.init(nibName: String(describing: ProjectsListViewController.self), bundle: nil)
@@ -32,38 +27,48 @@ class ProjectsListViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        reloadData()
+    }
 }
 
 //MARK: - Private methods
 private extension ProjectsListViewController {
     
     func setupTableView() {
-        dataSource = UITableViewDiffableDataSource<ProjectsSection, Project>(tableView: projectsTableView) { (tableView, indexPath, project) in
-            let cell: ProjectCell = tableView.dequeueCell(at: indexPath)
-            cell.setupView(with: project)
-            return cell
-        }
-        
         projectsTableView.registerCell(ProjectCell.self)
-        projectsTableView.dataSource = dataSource
+        projectsTableView.dataSource = self
         projectsTableView.delegate = self
         projectsTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
         projectsTableView.rowHeight = UITableView.automaticDimension
         projectsTableView.estimatedRowHeight = 400
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        
-        var snapshot = NSDiffableDataSourceSnapshot<ProjectsSection, Project>()
-        snapshot.appendSections([.main])
-        snapshot.appendItems(ProjectsManager.explorableProjects, toSection: .main)
-        dataSource.apply(snapshot, animatingDifferences: false, completion: nil)
+    }
+    
+    func reloadData() {
+        projects = ProjectsManager.shared.explorableProjects
+        projectsTableView.reloadData()
     }
 }
 
 //MARK: - UITableViewDelegate
-extension ProjectsListViewController: UITableViewDelegate {
+extension ProjectsListViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return projects.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let project = projects[indexPath.row]
+        let cell: ProjectCell = tableView.dequeueCell(at: indexPath)
+        cell.setupView(with: project)
+        return cell
+    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let project = dataSource.itemIdentifier(for: indexPath) else { return }
+        let project = projects[indexPath.row]
         let viewController = ProjectDetailsViewController(project: project)
         navigationController?.pushViewController(viewController, animated: true)
     }

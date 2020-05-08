@@ -36,6 +36,10 @@
 		A7EA8F742433A37200260B77 /* ProjectsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EA8F732433A37200260B77 /* ProjectsManager.swift */; };
 		A7EA8F772433A75900260B77 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EA8F752433A75900260B77 /* ConfirmationViewController.swift */; };
 		A7EA8F782433A75900260B77 /* ConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7EA8F762433A75900260B77 /* ConfirmationViewController.xib */; };
+		A7F32302246611CA00CB9904 /* DonatedProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F32300246611CA00CB9904 /* DonatedProjectCell.swift */; };
+		A7F32303246611CA00CB9904 /* DonatedProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F32301246611CA00CB9904 /* DonatedProjectCell.xib */; };
+		A7F32306246616F800CB9904 /* SuccessDonationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F32304246616F800CB9904 /* SuccessDonationCell.swift */; };
+		A7F32307246616F800CB9904 /* SuccessDonationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F32305246616F800CB9904 /* SuccessDonationCell.xib */; };
 		D1D51D3A75FC5231091305A7 /* Pods_Mecena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C672AE1C6C65C8E433E6AA8 /* Pods_Mecena.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +97,10 @@
 		A7EA8F732433A37200260B77 /* ProjectsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsManager.swift; sourceTree = "<group>"; };
 		A7EA8F752433A75900260B77 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		A7EA8F762433A75900260B77 /* ConfirmationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationViewController.xib; sourceTree = "<group>"; };
+		A7F32300246611CA00CB9904 /* DonatedProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonatedProjectCell.swift; sourceTree = "<group>"; };
+		A7F32301246611CA00CB9904 /* DonatedProjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonatedProjectCell.xib; sourceTree = "<group>"; };
+		A7F32304246616F800CB9904 /* SuccessDonationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessDonationCell.swift; sourceTree = "<group>"; };
+		A7F32305246616F800CB9904 /* SuccessDonationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessDonationCell.xib; sourceTree = "<group>"; };
 		F874E788E14B72458FAF458F /* Pods-Mecena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mecena.debug.xcconfig"; path = "Target Support Files/Pods-Mecena/Pods-Mecena.debug.xcconfig"; sourceTree = "<group>"; };
 		FE47613F0137A4413ED3D1DB /* Pods-Mecena.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mecena.release.xcconfig"; path = "Target Support Files/Pods-Mecena/Pods-Mecena.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -245,6 +253,7 @@
 		A7391AB7243253DF00DA7F9B /* List */ = {
 			isa = PBXGroup;
 			children = (
+				A7F322FF2466117800CB9904 /* Cells */,
 				A7138D65241AAF000005417D /* InvestmentsViewController.swift */,
 				A7138D66241AAF000005417D /* InvestmentsViewController.xib */,
 			);
@@ -290,6 +299,17 @@
 				A7EA8F6C2433847500260B77 /* DetailInformationCell.xib */,
 				A7EA8F6F2433902800260B77 /* DonationOptionCell.swift */,
 				A7EA8F702433902800260B77 /* DonationOptionCell.xib */,
+				A7F32304246616F800CB9904 /* SuccessDonationCell.swift */,
+				A7F32305246616F800CB9904 /* SuccessDonationCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A7F322FF2466117800CB9904 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A7F32300246611CA00CB9904 /* DonatedProjectCell.swift */,
+				A7F32301246611CA00CB9904 /* DonatedProjectCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -410,10 +430,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7EA8F722433902800260B77 /* DonationOptionCell.xib in Resources */,
+				A7F32303246611CA00CB9904 /* DonatedProjectCell.xib in Resources */,
 				A7EA8F6E2433847500260B77 /* DetailInformationCell.xib in Resources */,
 				A7B8BF632432A47300384A20 /* ProjectDetailsViewController.xib in Resources */,
 				A7138D61241A9E980005417D /* ProjectsListViewController.xib in Resources */,
 				A7138D68241AAF000005417D /* InvestmentsViewController.xib in Resources */,
+				A7F32307246616F800CB9904 /* SuccessDonationCell.xib in Resources */,
 				A7138D37241A9BF50005417D /* LaunchScreen.storyboard in Resources */,
 				A7EA8F782433A75900260B77 /* ConfirmationViewController.xib in Resources */,
 				A7138D6C241AB0F60005417D /* ProfileViewController.xib in Resources */,
@@ -491,6 +513,7 @@
 				A7EA8F742433A37200260B77 /* ProjectsManager.swift in Sources */,
 				A7138D60241A9E980005417D /* ProjectsListViewController.swift in Sources */,
 				A7138D64241AA8F20005417D /* App+UIColor.swift in Sources */,
+				A7F32306246616F800CB9904 /* SuccessDonationCell.swift in Sources */,
 				A7EA8F6D2433847500260B77 /* DetailInformationCell.swift in Sources */,
 				A7EA8F772433A75900260B77 /* ConfirmationViewController.swift in Sources */,
 				A7138D67241AAF000005417D /* InvestmentsViewController.swift in Sources */,
@@ -500,6 +523,7 @@
 				A7138D2D241A9BF40005417D /* SceneDelegate.swift in Sources */,
 				A7EA8F712433902800260B77 /* DonationOptionCell.swift in Sources */,
 				A7B8BF6A2432AF4E00384A20 /* Donation.swift in Sources */,
+				A7F32302246611CA00CB9904 /* DonatedProjectCell.swift in Sources */,
 				A7B8BF5824325A3300384A20 /* UITableView+Extension.swift in Sources */,
 				A7B8BF622432A47300384A20 /* ProjectDetailsViewController.swift in Sources */,
 			);

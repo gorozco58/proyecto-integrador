@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNO-TL-RoF">
-                        <rect key="frame" x="10" y="10" width="300" height="151"/>
+                        <rect key="frame" x="10" y="20" width="300" height="151"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYE-Zz-B7K">
                                 <rect key="frame" x="10" y="10" width="280" height="21"/>
@@ -84,10 +84,10 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="bNO-TL-RoF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EkA-LN-Whi"/>
+                    <constraint firstItem="bNO-TL-RoF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="EkA-LN-Whi"/>
                     <constraint firstItem="bNO-TL-RoF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SlF-LV-2dM"/>
                     <constraint firstAttribute="trailing" secondItem="bNO-TL-RoF" secondAttribute="trailing" constant="10" id="WvD-N4-HsF"/>
-                    <constraint firstAttribute="bottom" secondItem="bNO-TL-RoF" secondAttribute="bottom" constant="10" id="x0G-Ab-FDn"/>
+                    <constraint firstAttribute="bottom" secondItem="bNO-TL-RoF" secondAttribute="bottom" id="x0G-Ab-FDn"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

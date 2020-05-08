@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,13 +17,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3f-FK-mUI">
-                        <rect key="frame" x="10" y="10" width="300" height="17"/>
+                        <rect key="frame" x="10" y="10" width="300" height="27"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCv-75-2ed">
-                        <rect key="frame" x="0.0" y="32" width="320" height="225"/>
+                        <rect key="frame" x="0.0" y="42" width="320" height="225"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfp-di-bRE">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
@@ -232,7 +232,7 @@
                     <constraint firstAttribute="trailing" secondItem="F3f-FK-mUI" secondAttribute="trailing" constant="10" id="5Gr-Wm-JF8"/>
                     <constraint firstItem="bCv-75-2ed" firstAttribute="top" secondItem="F3f-FK-mUI" secondAttribute="bottom" constant="5" id="INJ-XU-bap"/>
                     <constraint firstAttribute="trailing" secondItem="bCv-75-2ed" secondAttribute="trailing" id="Lkg-E3-mjU"/>
-                    <constraint firstAttribute="bottom" secondItem="bCv-75-2ed" secondAttribute="bottom" constant="10" id="XMa-N1-EjR"/>
+                    <constraint firstAttribute="bottom" secondItem="bCv-75-2ed" secondAttribute="bottom" id="XMa-N1-EjR"/>
                     <constraint firstItem="bCv-75-2ed" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gAC-J1-J53"/>
                     <constraint firstItem="F3f-FK-mUI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="uaN-5P-O9k"/>
                 </constraints>
