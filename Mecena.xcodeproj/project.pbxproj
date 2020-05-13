@@ -20,6 +20,13 @@
 		A7138D68241AAF000005417D /* InvestmentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7138D66241AAF000005417D /* InvestmentsViewController.xib */; };
 		A7138D6B241AB0F60005417D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7138D69241AB0F60005417D /* ProfileViewController.swift */; };
 		A7138D6C241AB0F60005417D /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7138D6A241AB0F60005417D /* ProfileViewController.xib */; };
+		A73B34B6246C99C900A415BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B34B5246C99C900A415BD /* User.swift */; };
+		A73B34BA246C9CEB00A415BD /* ProfileImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B34B8246C9CEB00A415BD /* ProfileImageCell.swift */; };
+		A73B34BB246C9CEB00A415BD /* ProfileImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A73B34B9246C9CEB00A415BD /* ProfileImageCell.xib */; };
+		A73B34BE246C9DDB00A415BD /* ProfileInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B34BC246C9DDB00A415BD /* ProfileInformationCell.swift */; };
+		A73B34BF246C9DDB00A415BD /* ProfileInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A73B34BD246C9DDB00A415BD /* ProfileInformationCell.xib */; };
+		A73B34C2246CA2EF00A415BD /* ProfileButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B34C0246CA2EF00A415BD /* ProfileButtonCell.swift */; };
+		A73B34C3246CA2EF00A415BD /* ProfileButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A73B34C1246CA2EF00A415BD /* ProfileButtonCell.xib */; };
 		A7B8BF56243256F900384A20 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF55243256F900384A20 /* Project.swift */; };
 		A7B8BF5824325A3300384A20 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF5724325A3300384A20 /* UITableView+Extension.swift */; };
 		A7B8BF5D24325ADE00384A20 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF5B24325ADE00384A20 /* ProjectCell.swift */; };
@@ -81,6 +88,13 @@
 		A7138D66241AAF000005417D /* InvestmentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvestmentsViewController.xib; sourceTree = "<group>"; };
 		A7138D69241AB0F60005417D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A7138D6A241AB0F60005417D /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		A73B34B5246C99C900A415BD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A73B34B8246C9CEB00A415BD /* ProfileImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageCell.swift; sourceTree = "<group>"; };
+		A73B34B9246C9CEB00A415BD /* ProfileImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileImageCell.xib; sourceTree = "<group>"; };
+		A73B34BC246C9DDB00A415BD /* ProfileInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInformationCell.swift; sourceTree = "<group>"; };
+		A73B34BD246C9DDB00A415BD /* ProfileInformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInformationCell.xib; sourceTree = "<group>"; };
+		A73B34C0246CA2EF00A415BD /* ProfileButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonCell.swift; sourceTree = "<group>"; };
+		A73B34C1246CA2EF00A415BD /* ProfileButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileButtonCell.xib; sourceTree = "<group>"; };
 		A7B8BF55243256F900384A20 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		A7B8BF5724325A3300384A20 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		A7B8BF5B24325ADE00384A20 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
@@ -223,6 +237,8 @@
 		A7138D5D241A9C620005417D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				A73B34B4246C99B500A415BD /* Model */,
+				A73B34B7246C9CD400A415BD /* Cells */,
 				A7138D69241AB0F60005417D /* ProfileViewController.swift */,
 				A7138D6A241AB0F60005417D /* ProfileViewController.xib */,
 			);
@@ -258,6 +274,27 @@
 				A7138D66241AAF000005417D /* InvestmentsViewController.xib */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		A73B34B4246C99B500A415BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A73B34B5246C99C900A415BD /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A73B34B7246C9CD400A415BD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A73B34B8246C9CEB00A415BD /* ProfileImageCell.swift */,
+				A73B34B9246C9CEB00A415BD /* ProfileImageCell.xib */,
+				A73B34BC246C9DDB00A415BD /* ProfileInformationCell.swift */,
+				A73B34BD246C9DDB00A415BD /* ProfileInformationCell.xib */,
+				A73B34C0246CA2EF00A415BD /* ProfileButtonCell.swift */,
+				A73B34C1246CA2EF00A415BD /* ProfileButtonCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		A7B8BF5924325AB100384A20 /* Cells */ = {
@@ -432,11 +469,14 @@
 				A7EA8F722433902800260B77 /* DonationOptionCell.xib in Resources */,
 				A7F32303246611CA00CB9904 /* DonatedProjectCell.xib in Resources */,
 				A7EA8F6E2433847500260B77 /* DetailInformationCell.xib in Resources */,
+				A73B34C3246CA2EF00A415BD /* ProfileButtonCell.xib in Resources */,
+				A73B34BB246C9CEB00A415BD /* ProfileImageCell.xib in Resources */,
 				A7B8BF632432A47300384A20 /* ProjectDetailsViewController.xib in Resources */,
 				A7138D61241A9E980005417D /* ProjectsListViewController.xib in Resources */,
 				A7138D68241AAF000005417D /* InvestmentsViewController.xib in Resources */,
 				A7F32307246616F800CB9904 /* SuccessDonationCell.xib in Resources */,
 				A7138D37241A9BF50005417D /* LaunchScreen.storyboard in Resources */,
+				A73B34BF246C9DDB00A415BD /* ProfileInformationCell.xib in Resources */,
 				A7EA8F782433A75900260B77 /* ConfirmationViewController.xib in Resources */,
 				A7138D6C241AB0F60005417D /* ProfileViewController.xib in Resources */,
 				A7138D34241A9BF50005417D /* Assets.xcassets in Resources */,
@@ -509,12 +549,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7138D6B241AB0F60005417D /* ProfileViewController.swift in Sources */,
+				A73B34BA246C9CEB00A415BD /* ProfileImageCell.swift in Sources */,
 				A7B8BF672432A69E00384A20 /* HeaderInformationCell.swift in Sources */,
 				A7EA8F742433A37200260B77 /* ProjectsManager.swift in Sources */,
+				A73B34BE246C9DDB00A415BD /* ProfileInformationCell.swift in Sources */,
 				A7138D60241A9E980005417D /* ProjectsListViewController.swift in Sources */,
 				A7138D64241AA8F20005417D /* App+UIColor.swift in Sources */,
 				A7F32306246616F800CB9904 /* SuccessDonationCell.swift in Sources */,
 				A7EA8F6D2433847500260B77 /* DetailInformationCell.swift in Sources */,
+				A73B34C2246CA2EF00A415BD /* ProfileButtonCell.swift in Sources */,
 				A7EA8F772433A75900260B77 /* ConfirmationViewController.swift in Sources */,
 				A7138D67241AAF000005417D /* InvestmentsViewController.swift in Sources */,
 				A7B8BF5D24325ADE00384A20 /* ProjectCell.swift in Sources */,
@@ -526,6 +569,7 @@
 				A7F32302246611CA00CB9904 /* DonatedProjectCell.swift in Sources */,
 				A7B8BF5824325A3300384A20 /* UITableView+Extension.swift in Sources */,
 				A7B8BF622432A47300384A20 /* ProjectDetailsViewController.swift in Sources */,
+				A73B34B6246C99C900A415BD /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
