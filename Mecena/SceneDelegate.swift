@@ -26,6 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
+        tabBarController.present(LoginViewController(), animated: false, completion: nil)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

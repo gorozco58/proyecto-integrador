@@ -27,6 +27,8 @@
 		A73B34BF246C9DDB00A415BD /* ProfileInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A73B34BD246C9DDB00A415BD /* ProfileInformationCell.xib */; };
 		A73B34C2246CA2EF00A415BD /* ProfileButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B34C0246CA2EF00A415BD /* ProfileButtonCell.swift */; };
 		A73B34C3246CA2EF00A415BD /* ProfileButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A73B34C1246CA2EF00A415BD /* ProfileButtonCell.xib */; };
+		A7839BF02471A49F006C76B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7839BEE2471A49F006C76B4 /* LoginViewController.swift */; };
+		A7839BF12471A49F006C76B4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7839BEF2471A49F006C76B4 /* LoginViewController.xib */; };
 		A7B8BF56243256F900384A20 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF55243256F900384A20 /* Project.swift */; };
 		A7B8BF5824325A3300384A20 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF5724325A3300384A20 /* UITableView+Extension.swift */; };
 		A7B8BF5D24325ADE00384A20 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8BF5B24325ADE00384A20 /* ProjectCell.swift */; };
@@ -95,6 +97,8 @@
 		A73B34BD246C9DDB00A415BD /* ProfileInformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInformationCell.xib; sourceTree = "<group>"; };
 		A73B34C0246CA2EF00A415BD /* ProfileButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonCell.swift; sourceTree = "<group>"; };
 		A73B34C1246CA2EF00A415BD /* ProfileButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileButtonCell.xib; sourceTree = "<group>"; };
+		A7839BEE2471A49F006C76B4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A7839BEF2471A49F006C76B4 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		A7B8BF55243256F900384A20 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		A7B8BF5724325A3300384A20 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		A7B8BF5B24325ADE00384A20 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
@@ -222,6 +226,8 @@
 		A7138D5B241A9C2B0005417D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				A7839BEE2471A49F006C76B4 /* LoginViewController.swift */,
+				A7839BEF2471A49F006C76B4 /* LoginViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -474,6 +480,7 @@
 				A7B8BF632432A47300384A20 /* ProjectDetailsViewController.xib in Resources */,
 				A7138D61241A9E980005417D /* ProjectsListViewController.xib in Resources */,
 				A7138D68241AAF000005417D /* InvestmentsViewController.xib in Resources */,
+				A7839BF12471A49F006C76B4 /* LoginViewController.xib in Resources */,
 				A7F32307246616F800CB9904 /* SuccessDonationCell.xib in Resources */,
 				A7138D37241A9BF50005417D /* LaunchScreen.storyboard in Resources */,
 				A73B34BF246C9DDB00A415BD /* ProfileInformationCell.xib in Resources */,
@@ -551,6 +558,7 @@
 				A7138D6B241AB0F60005417D /* ProfileViewController.swift in Sources */,
 				A73B34BA246C9CEB00A415BD /* ProfileImageCell.swift in Sources */,
 				A7B8BF672432A69E00384A20 /* HeaderInformationCell.swift in Sources */,
+				A7839BF02471A49F006C76B4 /* LoginViewController.swift in Sources */,
 				A7EA8F742433A37200260B77 /* ProjectsManager.swift in Sources */,
 				A73B34BE246C9DDB00A415BD /* ProfileInformationCell.swift in Sources */,
 				A7138D60241A9E980005417D /* ProjectsListViewController.swift in Sources */,
